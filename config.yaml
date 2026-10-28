@@ -1,0 +1,54 @@
+project:
+  name: KSA_NFI_LULC_Biomass_Improved
+  version: "5.0"
+  scope: national_KSA
+  built_upon: F:/1.KSA/1.Forest/10.NFI/10.LULC_Validation
+  calculation_doc: data/docs/NFI_ KSA Calculation_Trees&shrubs.docx
+  random_seed: 42
+  plots_per_su: 5
+
+paths:
+  workspace: .
+  lulc_validated: data/lulc/lucs_office_validated_esa_esri_ndvi.csv
+  office_points: data/lulc/office_plot_points.csv
+  clean_data: data/cleansed
+  calc_extract: data/docs/_calc_doc_extract.md
+  output_root: outputs
+
+tables:
+  su: data/cleansed/nfi_of_ksa_program_su.xlsx
+  plot: data/cleansed/plot.xlsx
+  trees: data/cleansed/trees.xlsx
+  shrubs: data/cleansed/shrubs_bushes.xlsx
+  lucs_raw: data/cleansed/lucs1.xlsx
+  regeneration: data/cleansed/regeneration1.xlsx
+
+columns:
+  su_id_in_su_master: su_no
+  su_id_in_child: nfi_of_ksa_program_su_su_no
+  plot_id: plot_id1
+  region_en: su_group_region_e
+  dbh: tree_dbh
+  height: tree_height
+  lat: plot_info1_plot_coor1_y
+  lon: plot_info1_plot_coor1_x
+  lulc_final: final_lulc
+  lulc_lon: lon
+  lulc_lat: lat
+
+tree_biomass:
+  form_factor: 0.65
+  wood_density: 0.6
+  bef: 2.0
+  root_shoot: 0.28
+  carbon_fraction: 0.47
+  co2eq_factor: 3.67
+  conversion_factor_ha: 10
+  plot_area_m2: 1000
+
+policy:
+  remote_height_imputation: false
+  design_based_estimates: false
+  carbon_label: provisional
+  scope: national
+  baseline: LULC_Validation

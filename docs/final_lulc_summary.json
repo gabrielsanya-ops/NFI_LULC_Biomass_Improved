@@ -1,0 +1,28 @@
+{
+  "n_rows": 18360,
+  "n_true": 12155,
+  "n_false": 6205,
+  "pct_true": 66.20370370370371,
+  "pct_false": 33.7962962962963,
+  "pct_agree_esa": 55.59912854030501,
+  "pct_agree_esri": 38.12636165577342,
+  "pct_agree_both": 27.41830065359477,
+  "n_inside_forest_reserve": 152,
+  "n_final_lulc_forest": 153,
+  "n_forest_rule": 152,
+  "unique_new_lcu": 15,
+  "cards": {
+    "LULC rows": "18,360",
+    "Accepted": "66.2%",
+    "New LCU": "33.8%",
+    "Corresponds ESA": "55.6%",
+    "Corresponds ESRI": "38.1%",
+    "Unique New LCU": "15",
+    "Inside forest reserve": "152",
+    "Final LULC Forest": "153"
+  },
+  "out_csv": "H:\\3.NFI\\NDVI\\SaudiAtlas_Vegetation_Cube\\07_lulc_validation\\lucs_office_validated_esa_esri_ndvi.csv",
+  "out_xlsx": "H:\\3.NFI\\NDVI\\SaudiAtlas_Vegetation_Cube\\07_lulc_validation\\lucs_office_validated_esa_esri_ndvi.xlsx",
+  "report_html": "H:\\3.NFI\\NDVI\\SaudiAtlas_Vegetation_Cube\\07_lulc_validation\\LULC_VALIDATION_REPORT.html",
+  "forest_rule": "inside_forest_reserved_boundary"
+}

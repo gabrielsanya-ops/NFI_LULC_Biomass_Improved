@@ -1,0 +1,47 @@
+{
+  "n_rows": 18360,
+  "n_plots": 18354,
+  "n_changed": 5636,
+  "change_rate": 0.30697167755991284,
+  "rule_counts": [
+    [
+      "field_matches_esa_not_esri",
+      5156
+    ],
+    [
+      "all_agree_or_rs_matches_field",
+      5033
+    ],
+    [
+      "esa_esri_conflict_ndvi_tiebreak",
+      2852
+    ],
+    [
+      "esa_esri_consensus_override",
+      2784
+    ],
+    [
+      "field_matches_esri_not_esa",
+      1965
+    ],
+    [
+      "conflict_keep_field",
+      539
+    ],
+    [
+      "esa_esri_consensus_but_ndvi_keeps_field",
+      31
+    ]
+  ],
+  "enriched_csv": "H:\\3.NFI\\NDVI\\SaudiAtlas_Vegetation_Cube\\07_lulc_validation\\lucs_office_validated_esa_esri_ndvi.csv",
+  "points_gpkg": "H:\\3.NFI\\NDVI\\SaudiAtlas_Vegetation_Cube\\07_lulc_validation\\office_plot_points_validated.gpkg",
+  "metrics_json": "H:\\3.NFI\\NDVI\\SaudiAtlas_Vegetation_Cube\\07_lulc_validation\\validation_metrics.json",
+  "generated_at": "2026-10-04T10:00:41.219444+00:00",
+  "dry_ndvi_note": "National EE task Saudi_2024_Dry_NDVI_Median was CANCELLED; August 2024 S2 median NDVI sampled at office points.",
+  "esri_year": 2023,
+  "report_html": "H:\\3.NFI\\NDVI\\SaudiAtlas_Vegetation_Cube\\07_lulc_validation\\LULC_VALIDATION_REPORT.html",
+  "n_inside_forest_reserve": 152,
+  "n_final_lulc_forest": 153,
+  "enriched_xlsx": "H:\\3.NFI\\NDVI\\SaudiAtlas_Vegetation_Cube\\07_lulc_validation\\lucs_office_validated_esa_esri_ndvi.xlsx",
+  "forest_rule": "inside_forest_reserved_boundary"
+}
